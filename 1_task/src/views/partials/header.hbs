@@ -1,0 +1,26 @@
+<header id="hodor">
+     <a class="title" href="/">КОТИКОГРАМ</a>
+  </header>
+  <div class="first">
+      {{#if name}}
+      <h3>Привет, {{name}} !</h3>
+      {{/if}}
+             <nav>
+<ul class="btns">
+                   {{#if name}}
+        <li>
+            <a href="auth/signout">Выйти</a>
+        </li>
+        {{else}}
+        <li>
+            <a href="/auth/signup">Регистрация</a>
+        </li>
+        <li>
+            <a href="signin">Войти</a>
+        </li>
+        {{/if}}
+</ul>
+  </nav>
+  </div>
+
+ 

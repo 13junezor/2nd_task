@@ -1,0 +1,33 @@
+<section class="about">
+   <h3>Поделись любимым котейкой!</h3>
+</section>
+       <div name="name" class="d-flex justify-content-center " >
+<form class="d-flex flex-column align-items-center" action="/kotohran" method="POST">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label"> <em>Ссылка на котика</em></label>
+    <input name='adres' type="text" class="form-control" >
+     </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Описание котика</label>
+    <input name='opisanie' type="text" class="form-control" >
+  </div>
+  
+  <button class="btn btn-large btn-primary" type="submit" > <i class="icon-heart">Запостить</i></button>
+</form>
+</div>
+<hr />
+
+<section data-kot class="d-flex flex-column align-items-center">
+{{#each listOfKotiki}}
+
+<div data-id="{{this.id}}" class="card, my=10" style="width: 18rem;">
+  <img data-total src="{{this.adres}}" class="card-img-top" alt="...">
+  <div class="card-body">
+        <p data-count class="card-text">{{this.opisanie}}</p>
+  </div>
+  <button data-action='delete' actiontype="button" class="btn btn-danger delet">Удалить котика(</button>
+</div>
+{{/each}}
+
+</section>
+

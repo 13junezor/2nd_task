@@ -1,0 +1,95 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background-color: transparent;
+    top:0;
+    z-index: 1;
+    transition: ease;
+    transition: 0.25s;
+    font-family:sans-serif;
+    font-size: 7vh;
+}
+.first h3 {
+  margin-left: 30px;
+}
+.about {
+      margin-top: 5px;
+    display: inline;
+    text-align: center;
+         }
+  
+ 
+  .title {
+        background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .2s;
+  }
+  
+  .header h1:hover {
+    background-image: linear-gradient(43deg, #FFCC70  0%, #C850C0 46%, #4158D0 100%);
+    transform:scale(1.2);
+  }
+  .scrolled {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 12px 34px -11px rgb(65 62 101 / 10%);
+  }
+  .btns {
+    display:flexbox;
+    justify-content: right;
+    font-size: 15px;
+    font-weight: 600;
+    
+  }
+.about h3 {
+  color: #4158D0;
+}
+  .form h1 {
+    text-align: center;
+    color: darkblue;
+  }
+  .first {
+    font-size: 40px;
+    align-items: center;
+    margin-top: 120px;
+  }
+  .form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .form__group {
+    padding-top: 10px; padding-bottom: 10px;
+    text-align: center;
+  }
+  .btnEnter {
+          font-family: sans-serif;
+      border: none;
+      border-radius: 25px;
+      padding: 10px 29px;
+      font-size: 15px;
+      cursor: pointer;
+      color: white;
+      background-color: #ef18ae;
+      box-shadow: 0px 4px 10px rgba(223, 76, 186, 0.36);
+      }
+      .border {
+        width: 100%;
+        border: 1px solid #E6EAF4;
+        margin-top: 2px;
+        margin-bottom: 3px;
+      }
+      .registr {
+        display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 7px; padding-bottom: 7px;
+      }
+      .delet {
+              margin-bottom: 15px;
+      }
